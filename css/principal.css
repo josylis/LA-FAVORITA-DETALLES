@@ -74,6 +74,8 @@ p {
 /* IMG FONDO GENERAL */
 header {
   background-image: url(../imagenes/fondo2.png);
+  background-size: 100vw 100vh;
+  background-position: center;
 }
 
 header div img {
@@ -102,9 +104,8 @@ nav * {
   font-weight: bold;
 }
 
-form button {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e05780), to(#f8d2dd));
-  background: linear-gradient(to top, #e05780, #f8d2dd);
+.btnRosa {
+  background-color: #eea7bb;
 }
 
 nav a img {
@@ -244,10 +245,16 @@ h2 {
   margin: 5px;
 }
 
+.fondoTransparente {
+  background-color: #7ecabc;
+  opacity: .4;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 form {
-  color: #030203;
-  font-size: 1.25rem;
-  width: 100%;
+  margin: auto;
+  width: 50%;
   height: auto;
 }
 
@@ -255,7 +262,38 @@ form {
   font-size: 2.5rem;
   color: #008b8b;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.btnTurquesa {
+  background-color: #eea7bb;
+}
+
+.letra {
+  color: #e74979;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.textoForm {
+  color: #030203;
+  font-size: 1.25rem;
+  text-align: initial;
+}
+
+textarea {
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.texFinal {
+  color: #030203;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 100px;
 }
 
 .colorTabla {
@@ -268,9 +306,9 @@ form {
   src: url("../fuentes/DK Lemon Yellow Sun.otf");
 }
 
-html {
-  min-height: 100%;
-  position: relative;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
