@@ -1,0 +1,282 @@
+@charset "UTF-8";
+p {
+  color: black;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.subtitulo-80px {
+  font-size: 80px;
+  color: #008b8b;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.subtitulo-50px {
+  font-size: 50px;
+  color: #008b8b;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.subtitulo-40px {
+  font-size: 40px;
+  color: #008b8b;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*------------------------------------ ANIMACIÓN I  ------------------------------------ */
+.zoomImg {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.zoomImg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*------------------------------------ ANIMACIÓN TÍTULOS  ------------------------------------ */
+.zoom {
+  font-size: 2.5rem;
+  color: #008b8b;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+  text-align: center;
+  padding: 20px;
+}
+
+.zoom:hover {
+  color: #e74979;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+/* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
+.pregFre {
+  color: black;
+  font-size: 1.88rem;
+  font-weight: bolder;
+}
+
+/* LOGO */
+.logo {
+  display: block;
+  margin: auto;
+}
+
+/* IMG FONDO GENERAL */
+header {
+  background-image: url(../imagenes/fondo2.png);
+}
+
+header div img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+/*  TÍTULO Y SUBTITULO  */
+h1 {
+  color: #e74979;
+  font-size: 6.25rem;
+  text-align: center;
+}
+
+h2 {
+  color: #008b8b;
+  font-size: 1.88rem;
+}
+
+nav * {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e74979), to(#eea7bb));
+  background: linear-gradient(to top, #e74979, #eea7bb);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+form button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e05780), to(#f8d2dd));
+  background: linear-gradient(to top, #e05780, #f8d2dd);
+}
+
+nav a img {
+  width: 35px;
+}
+
+#menu #item a:hover {
+  background: #eea7bb;
+  color: #030203;
+  -webkit-animation: 1s ms 1;
+          animation: 1s ms 1;
+  -webkit-animation-name: animacionMenu;
+          animation-name: animacionMenu;
+}
+
+/* para la animacion */
+@-webkit-keyframes animacionMenu {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+}
+@keyframes animacionMenu {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+footer {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.textoFooter {
+  color: #f4f3ee;
+  font-size: 1.88rem;
+  text-align: center;
+}
+
+.fondoFooter {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f38dac), to(#eea7bb));
+  background: linear-gradient(to bottom, #f38dac, #eea7bb);
+}
+
+.texto {
+  color: #030203;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-align: center;
+}
+
+footer div img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: initial;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagenLinks {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+/* CUERPO 3 VIDEO Y CUADRO CON FRASE */
+.cuadroFrase, .cuadroFrase--nueva {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e74979), to(#eea7bb));
+  background: linear-gradient(to bottom, #e74979, #eea7bb);
+  width: 100%;
+  height: auto;
+  border: 5px solid  #c86180;
+}
+
+.cuadroFrase--nueva {
+  color: #f4f3ee;
+  font-size: 1.88rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* CUERPO 4 MAS ELEGIDOS */
+h5 {
+  color: #6b705c;
+}
+
+h2 {
+  color: #008b8b;
+  font-size: 3.12rem;
+}
+
+.modeloSub {
+  padding: 10px;
+  color: #008b8b;
+  font-size: 3.12rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.zoomImg {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.zoomImg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.imgProductos {
+  text-align: center;
+  width: 300px;
+  height: 390px;
+  display: inline;
+  margin: 5px;
+}
+
+.cuadrada {
+  text-align: center;
+  width: 390px;
+  height: 390px;
+  display: inline;
+  margin: 5px;
+}
+
+form {
+  color: #030203;
+  font-size: 1.25rem;
+  width: 100%;
+  height: auto;
+}
+
+.subtitulo-40px {
+  font-size: 2.5rem;
+  color: #008b8b;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.colorTabla {
+  background-color: #7ecabc;
+}
+
+/*------------------------------------ COMÚN TODAS PÁGINAS  ------------------------------------ */
+@font-face {
+  font-family: "Modelo Mayuscula";
+  src: url("../fuentes/DK Lemon Yellow Sun.otf");
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Modelo Mayuscula";
+  margin: 0;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=principal.css.map */

@@ -1,0 +1,32 @@
+@import "general";
+@import "colores";
+@import "header";
+@import "menu";
+@import "footer";
+@import "index";
+@import "productos";
+@import"contactanos";
+@import"carrito";
+
+/*------------------------------------ COMÚN TODAS PÁGINAS  ------------------------------------ */
+@font-face{
+    font-family:"Modelo Mayuscula";
+    src: url("../fuentes/DK\ Lemon\ Yellow\ Sun.otf");
+}
+// * {
+//     margin: 0px;
+//     padding: 0px;
+// }
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+body{
+    font-family:"Modelo Mayuscula";
+    margin: 0;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+

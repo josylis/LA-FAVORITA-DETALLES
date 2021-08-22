@@ -1,0 +1,32 @@
+/* LOGO */
+.logo{
+    display:block;
+    margin:auto;
+}
+
+/* IMG FONDO GENERAL */
+header{
+    background-image:url(../imagenes/fondo2.png);
+}
+header div img{
+    width: 400px;
+    height: 400px;
+    display:block;
+    margin:auto;
+}
+
+/*  TÍTULO Y SUBTITULO  */
+
+h1{
+    color: $rosa-fuerte;
+    font-size: 6.25rem;
+    text-align: center;
+}
+
+$tamanioh2: 1.88rem; 
+h2 {
+    color:$turquesa-fuerte;
+    font-size: $tamanioh2;
+}
+
+

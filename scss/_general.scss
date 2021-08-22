@@ -1,0 +1,48 @@
+
+
+p{
+    color: black;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-align: justify;
+}
+
+@each $size in 80px, 50px, 40px,{
+    .subtitulo-#{$size}{
+        font-size: $size;
+        color: #008b8b;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+/*------------------------------------ ANIMACIÓN I  ------------------------------------ */
+.zoomImg{
+    transition: transform .2s; 
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+/*------------------------------------ ANIMACIÓN TÍTULOS  ------------------------------------ */
+.zoom{
+  font-size: 2.5rem;
+  color: #008b8b;
+    transition: width 2s, height 2s, transform 2s;
+    text-align: center;
+    padding: 20px;
+    &:hover{
+        color:#e74979;
+        transform : scale(2);
+    }
+}
+
+
+/* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
+.pregFre{
+    color: black;
+    font-size: 1.88rem;
+    font-weight:bolder;
+}
+
+
+
