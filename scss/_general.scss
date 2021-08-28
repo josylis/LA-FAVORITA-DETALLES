@@ -31,10 +31,21 @@ p{
     text-align: center;
     padding: 20px;
     &:hover{
-        color:#e74979;
-        transform : scale(2);
+        color: #e74979;
+        transform : scale(1);
     }
 }
+
+.linea::before {
+    content: "----------------------";
+    color: #e74979;
+}
+
+.linea::after {
+    content: "----------------------";
+    color: #e74979;
+}
+
 
 
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */

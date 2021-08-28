@@ -38,7 +38,15 @@ p {
   padding: 20px; }
   .zoom:hover {
     color: #e74979;
-    transform: scale(2); }
+    transform: scale(1); }
+
+.linea::before {
+  content: "----------------------";
+  color: #e74979; }
+
+.linea::after {
+  content: "----------------------";
+  color: #e74979; }
 
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
 .pregFre {
@@ -66,7 +74,7 @@ header div img {
 /*  TÍTULO Y SUBTITULO  */
 h1 {
   color: #e74979;
-  font-size: 6.25rem;
+  font-size: 5rem;
   text-align: center; }
 
 h2 {
@@ -134,18 +142,35 @@ footer div img {
   height: 50px; }
 
 /* CUERPO 3 VIDEO Y CUADRO CON FRASE */
-.cuadroFrase, .cuadroFrase--nueva {
+.cuadroFrase {
   text-align: center;
-  background: linear-gradient(to bottom, #e74979, #eea7bb);
-  width: 100%;
-  height: auto;
-  border: 5px solid  #c86180; }
+  background: #eea7bb;
+  margin: 60px auto;
+  padding: 10px;
+  position: relative; }
 
-.cuadroFrase--nueva {
+.textoP {
   color: #f4f3ee;
   font-size: 1.88rem;
   text-align: center;
   padding: 10px; }
+
+article div::before {
+  background: #f38dac;
+  transform: rotate(6deg); }
+
+article div::after {
+  background: #e74979;
+  transform: rotate(-6deg); }
+
+article div::before, article div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0; }
 
 /* CUERPO 4 MAS ELEGIDOS */
 h5 {
@@ -162,11 +187,8 @@ h2 {
   text-align: center;
   font-style: italic; }
 
-.zoomImg {
-  transition: transform .2s; }
-
 .zoomImg:hover {
-  transform: scale(1.2); }
+  filter: opacity(0.5); }
 
 .imgProductos {
   text-align: center;
@@ -210,7 +232,7 @@ form {
 
 .textoForm {
   color: #030203;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-align: initial; }
 
 textarea {
@@ -239,6 +261,4 @@ textarea {
 
 body {
   font-family: "Modelo Mayuscula";
-  margin: 0;
-  margin-bottom: 40px;
-  border-radius: 4px; }
+  margin: 0; }

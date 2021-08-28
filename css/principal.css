@@ -54,8 +54,18 @@ p {
 
 .zoom:hover {
   color: #e74979;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.linea::before {
+  content: "----------------------";
+  color: #e74979;
+}
+
+.linea::after {
+  content: "----------------------";
+  color: #e74979;
 }
 
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
@@ -88,7 +98,7 @@ header div img {
 /*  TÍTULO Y SUBTITULO  */
 h1 {
   color: #e74979;
-  font-size: 6.25rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -183,20 +193,41 @@ footer div img {
 }
 
 /* CUERPO 3 VIDEO Y CUADRO CON FRASE */
-.cuadroFrase, .cuadroFrase--nueva {
+.cuadroFrase {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e74979), to(#eea7bb));
-  background: linear-gradient(to bottom, #e74979, #eea7bb);
-  width: 100%;
-  height: auto;
-  border: 5px solid  #c86180;
+  background: #eea7bb;
+  margin: 60px auto;
+  padding: 10px;
+  position: relative;
 }
 
-.cuadroFrase--nueva {
+.textoP {
   color: #f4f3ee;
   font-size: 1.88rem;
   text-align: center;
   padding: 10px;
+}
+
+article div::before {
+  background: #f38dac;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+article div::after {
+  background: #e74979;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+article div::before, article div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 
 /* CUERPO 4 MAS ELEGIDOS */
@@ -217,16 +248,9 @@ h2 {
   font-style: italic;
 }
 
-.zoomImg {
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
 .zoomImg:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
 }
 
 .imgProductos {
@@ -278,7 +302,7 @@ form {
 
 .textoForm {
   color: #030203;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-align: initial;
 }
 
@@ -314,7 +338,5 @@ textarea {
 body {
   font-family: "Modelo Mayuscula";
   margin: 0;
-  margin-bottom: 40px;
-  border-radius: 4px;
 }
 /*# sourceMappingURL=principal.css.map */
