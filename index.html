@@ -39,7 +39,7 @@
         
 
                 <!-- NAVEGADOR/MENU -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border border-bottom">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                     <div id="menu" class="container-fluid">
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,13 +78,13 @@
                                 </li>
     
                                 <li id="item" class="nav-item">
-                                    <a class="nav-link" href="contenidos/carrito.html"><img loading=lazy src="imagenes/carritoCompras .PNG"></a>
+                                    <a class="nav-link" href="contenidos/carrito.html"><img loading=lazy src="imagenes/carritoCompra.png"></a>
                                 </li>
                             </ul>
     
                             <form class="d-flex">
-                                <input class="form-control me-2" type="buscar" placeholder="Escribe aqui..." aria-label="Search">
-                            <button class="btn btnRosa" type="submit">BUSCAR</button>
+                                <input class="form-control me-2 border border-dark" type="buscar" id="menu" placeholder="Escribe aqui..." aria-label="Search">
+                            <button class="btn btnRosa border border-dark" type="submit">BUSCAR</button>
                         </form>
                         </div>
                     </div>
@@ -92,16 +92,16 @@
 
 
 
-            <!-- CUERPO DEL HOME -------------->
-        <!-- CUERPO 1 -->
-            <section class="col-12 ">
-                <div class="col-12 justify-content-around align-items-center"> 
-                    <h1 class="subtitulo-50px mt-3">Te ayudamos a sorprender a esa persona especial</h1>
-                </div>
-            </section>
-            
+                <!-- CUERPO DEL HOME -------------->
+            <!-- CUERPO 1 -->
+                <section class="col-12 ">
+                    <div class="col-12 justify-content-around align-items-center"> 
+                        <h1 class="subtitulo-50px mt-3">Te ayudamos a sorprender a esa persona especial</h1>
+                    </div>
+                </section>
                 
-        <!-- CUERPO 2 CARRUSEL -->
+                
+            <!-- CUERPO 2 CARRUSEL -->
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -137,7 +137,7 @@
 
 <!-- CUERPO 3 VIDEO------------------------------------------------------->
             <div class="row">
-            <div data-aos="zoom-in" class="col-12 order-sm-first d-flex justify-content-center my-5">
+            <div data-aos="animacionTitulos-in" class="col-12 order-sm-first d-flex justify-content-center my-5">
 
                     <video src="video/LFD.mp4" type="video/mp4" width="400" height="500" controls loop alt="video elaboración de un arreglo"><code>video</code>     
                     </video><br><br>
@@ -152,110 +152,154 @@
                     <p class="textoP">"Momentos especiales en compañía de un rico regalo"</p>
                 </div>
             </article>
-        </div> <!--abre despues del body -->
 
         <!-- CUERPO 4 ARREGLOS MAS ELEGIDOS---------------------------------------------------------->
 
-    <div><h2 class="zoom linea">LOS MÁS ELEGIDOS</h2></div>
-        
-        <div class="container-fluid">
-            <div class="row">
-            <section class="mt-30">
-                <div class="col-12 mt-2 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+            <div><h2 class="animacionTitulos linea">LOS MÁS ELEGIDOS</h2></div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                    <section class="mt-30">
+                        <div class="col-12 mt-2 d-flex flex-column flex-lg-row justify-content-around align-items-center">
 
-                    <div class="zoomImg card my-5" data-aos="fade-up" data-aos-duration="1000" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo0.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo aniversario de bodas">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"> $ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
+                            <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                                <h4><span class="badge badge bg-danger">NUEVO</span></h4>
+                                <img loading=lazy src="imagenes/modelo0.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center"> Regalo cumpleañero salado $2.500,00</h4>
+                                    <a class="d-grid gap-2 btn btn-lg btnTurquesa ver" data-bs-toggle="modal" data-bs-target="#exampleModal">VER</a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h2 class="modal-title tituloEmergente linea text-center" id="exampleModalLabel">Regalo cumpleañero salado</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                <p class="textoEmergente">Incluye</p>
+                                                <p class="textoEmergente1">Decoración observada en la foto con el tema y colores de preferencia.</p>
+                                                <p class="textoEmergente1">2 cervezas Patagonia</p>
+                                                <p class="textoEmergente1">1 Paq Palitos 120gr</p>
+                                                <p class="textoEmergente1">1 Paq maní 120gr</p>
+                                                <p class="textoEmergente1">1 kit kat 41,5gr</p>
+                                                <p class="textoEmergente1">1 lata Pringles pequeña</p>
+                                                <p class="textoEmergente1">1 Twistos 95gr</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
+                                                <button class="botonn btn btnTurquesa"></button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                                <img loading=lazy src="imagenes/modelo1.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños 33 STAR WARS">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center"> Regalo cumpleaños STAR WARS $2.900,00 </h4>
+                                    <a class="d-grid gap-2 btn btn-lg btnTurquesa ver" data-bs-toggle="modal" data-bs-target="#exampleModal">VER</a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                                <img loading=lazy src="imagenes/modelo2.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños 3 SUPER HÉROES">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center"> Regalo infantil SUPERHÉROES $2.300,00</h4>
+                                    <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo1.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños 33 STAR WARS">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"> $ XXXX </h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo2.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños 3 SUPER HÉROES">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"> $ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row ">
-            <section class="mt-3 ">
-                <div class="col-12 mt-2 d-flex flex-column flex-lg-row justify-content-around align-items-center">
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo3.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños RACING CLUB ">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"> $ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo4.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo aniversario">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"> $ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo5.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños GAMES">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"> $ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row ">
-            <section class="mt-3 ">
-                <div class="col-12 mt-2 d-flex flex-column flex-lg-row justify-content-around align-items-center">
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/modelo6.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños 30">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">$ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/caja (1).jpg" class="card-img-top img-fluid img-thumbnail" alt="Caja cotillon cumpleaños">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">$ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="1000" class="card zoomImg my-5 mt-5" style="width: 18rem;">
-                        <img loading=lazy src="imagenes/padre2.jpg" class="card-img-top img-fluid img-thumbnail" alt="Caja desayuno DÍA DEL PADRE">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">$ XXXX</h5>
-                            <a href="#" class="d-grid gap-2 btn btn-lg bgTurquesa l-blanca">VER</a>
-                        </div>
+                    </section>
                     </div>
                 </div>
-            </section>
+
+                <div class="container-fluid">
+                    <div class="row ">
+                    <section class="mt-3 ">
+                        <div class="col-12 mt-2 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+    
+                            <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                                <img loading=lazy src="imagenes/modelo8.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños RIVER PLATE">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Regalo fanático RIVER PLATE $2.100,00</h4>
+                                    <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                                </div>
+                            </div>
+    
+                            <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                                <img loading=lazy src="imagenes/modelo4.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo aniversario">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Celebración Aniversario $2.500,00</h4>
+                                    <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                                </div>
+                            </div>
+    
+                            <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5 mt-5" style="width: 18rem;">
+                                <img loading=lazy src="imagenes/modelo9.jpg" class="card-img-top img-fluid img-thumbnail" alt="Arreglo cumpleaños GAMES">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Súper regalo GAME adulto $3.500,00</h4>
+                                    <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    </div>
+                </div>
+
+            <div class="container-fluid">
+                <div class="row ">
+                <section class="mt-3 ">
+                    <div class="col-12 mt-2 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+
+                        <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                            <img loading=lazy src="imagenes/modelo10.jpg" class="card-img-top img-fluid img-thumbnail" alt="Desayuno 15 años">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desayuno 15 años <p class="card-title modeloh4">$3.000,00</p></h4>
+                                <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5" style="width: 18rem;">
+                            <img loading=lazy src="imagenes/caja (1).jpg" class="card-img-top img-fluid img-thumbnail" alt="Caja cotillon cumpleaños">
+                            <div class="card-body">
+                                <h4 class="card-title text-center"> Caja especial <p class="card-title modeloh4">$1.900,00</p></h4>
+                                <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-duration="1000" class="card  my-5 mt-5" style="width: 18rem;">
+                            <img loading=lazy src="imagenes/padre2.jpg" class="card-img-top img-fluid img-thumbnail" alt="Caja desayuno DÍA DEL PADRE">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Desayuno Especial Día Especial $2.000,00</h4>
+                                <a href="#" class="d-grid gap-2 btn btn-lg btnTurquesa ver ">VER</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
             </div>
-        </div>
+        </div> <!-- abre despues del body -->
 
         <!----- CUERPO 5 FOOTER -------------------------------------------------->
 

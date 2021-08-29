@@ -38,7 +38,7 @@
             </div>
 
             <!-- NAVEGADOR/MENU -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-bottom">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                 <div id="menu" class="container-fluid">
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,13 +77,13 @@
                             </li>
 
                             <li id="item" class="nav-item">
-                                <a class="nav-link" href="../contenidos/carrito.html"><img loading=lazy src="../imagenes/carritoCompras .PNG"></a>
+                                <a class="nav-link" href="../contenidos/carrito.html"><img loading=lazy src="../imagenes/carritoCompra.png"></a>
                             </li>
                         </ul>
 
                         <form class="d-flex">
-                            <input class="form-control me-2" type="buscar" placeholder="Escribe aqui..." aria-label="Search">
-                        <button class="btn" type="submit">Buscar</button>
+                            <input class="form-control me-2 border border-dark" type="buscar" id="menu" placeholder="Escribe aqui..." aria-label="Search">
+                        <button class="btn border border-dark" type="submit">Buscar</button>
                     </form>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
 
     <!-- ACA DEBERIA PONER DIV O SECTION -->
     <!-- FORMULARIO -->
-    <h1 class="my-5 zoom linea">CONTÁCTANOS</h1>
+    <h1 class="my-5 animacionTitulos linea">CONTÁCTANOS</h1>
     <form>
         <div class="col-md-12 fondoTransparente">
             <legend class="subtitulo-40px">FORMULARIO DE CONTACTO</legend>
@@ -102,7 +102,7 @@
             <!--preguntas-->
             <div class="col-md-12 form-gruop">
                 <label for="validationServer01 nombre" class="form-label"><p class="letra">NOMBRE Y APELLIDO</p></label>
-                <input type="text" class="form-control is-valid  border border-dark" id="validationServer01" value="Josy" required>
+                <input type="text" class="form-control is-valid  border border-dark" id="validationServer01 formulario" value="Josy" required>
                 <div class="valid-feedback textoForm">
                     Me encanta!
                 </div>
@@ -110,7 +110,7 @@
 
             <div class="col-md-12 form-gruop mt-3">
                 <label for="exampleInputEmail1"><p class="letra">Correo Electrónico</p></label>
-                <input type="email" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nomre@ejemplo.com">
+                <input type="email" class="form-control border border-dark" id="exampleInputEmail1 formulario" aria-describedby="emailHelp" placeholder="nomre@ejemplo.com">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
@@ -146,10 +146,10 @@
             <!--Cuadro de comunicacion-->
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label"><p class="letra">Cuéntanos tu duda o información</p></label>
-                <textarea class="form-control border border-dark" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aqui..."></textarea>
+                <textarea class="form-control border border-dark" id="exampleFormControlTextarea1 formulario" rows="3" placeholder="Escribe aqui..."></textarea>
 
-                <button type="submit" class="mt-2 btn btnTurquesa border border-dark">Enviar</button>
-                <button type="reset" class="mt-2 btn btnTurquesa border border-dark">Limpiar</button>
+                <button type="submit" class="mt-2 btn btnRosa border border-dark">Enviar</button>
+                <button type="reset" class="mt-2 btn btnRosa border border-dark">Limpiar</button>
                 <br><br>
             </div>
 
@@ -159,7 +159,8 @@
                 <input type="file" class="form-control border border-dark" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
             </div>
 
-            <p class="texFinal">RECUERDA QUE TAMBIÉN PUEDES COMINUCARTE CON NOSOTRAS DIRECTAMENTE POR  <a href="https://wa.link/dy7hl9.">WHATSAPP</a></p>
+
+            <p class="col-md-12 texFinal my-5">RECUERDA QUE TAMBIÉN PUEDES COMINUCARTE CON NOSOTRAS DIRECTAMENTE POR  <a href="https://wa.link/dy7hl9.">WHATSAPP</a></p>
         </div>
         </div>
     </form>

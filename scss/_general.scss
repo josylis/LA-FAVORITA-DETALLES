@@ -15,18 +15,26 @@ p{
         margin-top: 50px;
     }
 }
+/* ------------------------------------- PLACEHOLDER ----------------------------------------- */
+#menu::placeholder{
+    color:#030203;
+}
+
+#formulario::placeholder{
+    color:#030203;
+
+}
+
 
 /*------------------------------------ ANIMACIÓN I  ------------------------------------ */
-.zoomImg{
-    transition: transform .2s; 
-    &:hover{
-        transform: scale(1.2);
-    }
+.animacionTitulosImg:hover{
+    filter: opacity(.5);
 }
+
 /*------------------------------------ ANIMACIÓN TÍTULOS  ------------------------------------ */
-.zoom{
-  font-size: 2.5rem;
-  color: #008b8b;
+.animacionTitulos{
+    font-size: 2.5rem;
+    color: #008b8b;
     transition: width 2s, height 2s, transform 2s;
     text-align: center;
     padding: 20px;
@@ -35,16 +43,52 @@ p{
         transform : scale(1);
     }
 }
+// .linea{
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//     border: 0;
+//     border-bottom: 5px solid #e74979;
+// }
 
-.linea::before {
-    content: "----------------------";
-    color: #e74979;
+.linea::after, .linea::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 5px;
+    background-color:#e74979;
+    top:1em;
+}
+.linea::before{
+    left: 150px;
+}
+.linea::after{
+    right: 150px;
 }
 
-.linea::after {
-    content: "----------------------";
-    color: #e74979;
+.lineaTurquesa{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 5px solid #008b8b;
 }
+
+// .linea::after, .linea::before{
+//     margin-top: 25px;
+//     margin-bottom: 80px;
+//     border: 0;
+//     border-bottom: 5px solid #e74979;
+// }
+
+
+// .linea::before {
+//     content: "----------------------";
+//     color: #e74979;
+// }
+
+// .linea::after {
+//     content: "----------------------";
+//     color: #e74979;
+// }
 
 
 
@@ -56,5 +100,12 @@ p{
 }
 
 
+/* ------------------------------------- BOTONOES ----------------------------------------- */
 
+.btnTurquesa{
+    background-color:#008b8b; 
+}
 
+.btnRosa{
+    background-color:#e74979;
+}

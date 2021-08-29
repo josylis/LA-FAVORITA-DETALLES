@@ -23,36 +23,60 @@ p {
   text-align: center;
   margin-top: 50px; }
 
+/* ------------------------------------- PLACEHOLDER ----------------------------------------- */
+#menu::placeholder {
+  color: #030203; }
+
+#formulario::placeholder {
+  color: #030203; }
+
 /*------------------------------------ ANIMACIÓN I  ------------------------------------ */
-.zoomImg {
-  transition: transform .2s; }
-  .zoomImg:hover {
-    transform: scale(1.2); }
+.animacionTitulosImg:hover {
+  filter: opacity(0.5); }
 
 /*------------------------------------ ANIMACIÓN TÍTULOS  ------------------------------------ */
-.zoom {
+.animacionTitulos {
   font-size: 2.5rem;
   color: #008b8b;
   transition: width 2s, height 2s, transform 2s;
   text-align: center;
   padding: 20px; }
-  .zoom:hover {
+  .animacionTitulos:hover {
     color: #e74979;
     transform: scale(1); }
 
+.linea::after, .linea::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 5px;
+  background-color: #e74979;
+  top: 1em; }
+
 .linea::before {
-  content: "----------------------";
-  color: #e74979; }
+  left: 150px; }
 
 .linea::after {
-  content: "----------------------";
-  color: #e74979; }
+  right: 150px; }
+
+.lineaTurquesa {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 5px solid #008b8b; }
 
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
 .pregFre {
   color: black;
   font-size: 1.88rem;
   font-weight: bolder; }
+
+/* ------------------------------------- BOTONOES ----------------------------------------- */
+.btnTurquesa {
+  background-color: #008b8b; }
+
+.btnRosa {
+  background-color: #e74979; }
 
 /* LOGO */
 .logo {
@@ -155,6 +179,24 @@ footer div img {
   text-align: center;
   padding: 10px; }
 
+.tituloEmergente {
+  color: #e74979;
+  font-size: 2rem;
+  text-align: center; }
+
+.textoEmergente {
+  color: #030203;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0; }
+
+.textoEmergente1 {
+  color: #030203;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0; }
+
 article div::before {
   background: #f38dac;
   transform: rotate(6deg); }
@@ -173,12 +215,23 @@ article div::before, article div::after {
   top: 0; }
 
 /* CUERPO 4 MAS ELEGIDOS */
-h5 {
-  color: #6b705c; }
+.ver {
+  font-size: 1.5rem;
+  color: #f4f3ee; }
+
+h4 {
+  color: #6b705c;
+  font-size: 1.5rem; }
 
 h2 {
   color: #008b8b;
-  font-size: 3.12rem; }
+  font-size: 3.12rem;
+  position: relative; }
+
+.modeloh4 {
+  color: #6b705c;
+  text-align: center;
+  font-size: 1.5rem; }
 
 .modeloSub {
   padding: 10px;
@@ -189,6 +242,14 @@ h2 {
 
 .zoomImg:hover {
   filter: opacity(0.5); }
+
+.botonn {
+  background-image: url(../imagenes/carritoCompra.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  background-size: 50px 50px;
+  background-position: center; }
 
 .imgProductos {
   text-align: center;
@@ -205,7 +266,7 @@ h2 {
   margin: 5px; }
 
 .fondoTransparente {
-  background-color: #7ecabc;
+  background-color: rgba(69, 199, 227, 0.5);
   opacity: .4;
   padding: 10px;
   border-radius: 10px; }
@@ -220,9 +281,6 @@ form {
   color: #008b8b;
   text-align: center;
   margin-top: 20px; }
-
-.btnTurquesa {
-  background-color: #eea7bb; }
 
 .letra {
   color: #e74979;
@@ -245,10 +303,10 @@ textarea {
   color: #030203;
   font-size: 1.8rem;
   text-align: center;
-  margin: 100px; }
+  margin: auto; }
 
 .colorTabla {
-  background-color: #7ecabc; }
+  background-color: #b3dfd7; }
 
 /*------------------------------------ COMÚN TODAS PÁGINAS  ------------------------------------ */
 @font-face {

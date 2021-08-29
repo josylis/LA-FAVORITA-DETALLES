@@ -8,12 +8,32 @@
 }
 
 .textoP{
-    color: #f4f3ee;
+    color: $blanco;
     font-size: 1.88rem;
     text-align: center; 
     padding: 10px;
 }
 
+.tituloEmergente{
+    color:$rosa-fuerte;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.textoEmergente{
+    color: $negro;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; 
+    padding: 0;
+}
+
+.textoEmergente1{
+    color: $negro;
+    font-size: 1.2rem;
+    text-align: center; 
+    padding: 0;
+}
 article div::before{
     background: $rosa-medio;
     transform: rotate(6deg);
@@ -33,13 +53,27 @@ article div::before, article div::after{
 }
 
 /* CUERPO 4 MAS ELEGIDOS */
-h5{
+.ver{
+    font-size: 1.5rem;
+    color: $blanco;
+}
+
+h4{
     color: $gris;
+    font-size: 1.5rem;
 }
 
 h2 {
-    color: #008b8b;
+    color:$turquesa-fuerte;
     font-size: 3.12rem;
+    position: relative;
+}
+
+
+.modeloh4{
+    color: $gris;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .modeloSub{
@@ -50,11 +84,15 @@ h2 {
     font-style: italic;
 }
 
-// .zoomImg{
-//     img;
-// }
-
 .zoomImg:hover{
     filter: opacity(.5);
 }
 
+.botonn{
+    background-image:url(../imagenes/carritoCompra.png);
+    background-repeat:no-repeat;
+    height:50px;
+    width:50px;
+    background-size: 50px 50px;
+    background-position:center;
+}
