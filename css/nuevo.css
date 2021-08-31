@@ -1,9 +1,7 @@
 @charset "UTF-8";
 p {
   color: black;
-  font-size: 1.25rem;
-  line-height: 30px;
-  text-align: justify; }
+  font-size: 1.25rem; }
 
 .subtitulo-80px {
   font-size: 80px;
@@ -54,16 +52,22 @@ p {
   top: 1em; }
 
 .linea::before {
-  left: 150px; }
+  left: 110px; }
 
 .linea::after {
-  right: 150px; }
+  right: 110px; }
 
 .lineaTurquesa {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-bottom: 5px solid #008b8b; }
+
+.lineaRosa {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 5px solid #e74979; }
 
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
 .pregFre {
@@ -85,7 +89,7 @@ p {
 
 /* IMG FONDO GENERAL */
 header {
-  background-image: url(../imagenes/fondo2.png);
+  background-image: url(../imagenes/fondo.jpg);
   background-size: 100vw 100vh;
   background-position: center; }
 
@@ -179,6 +183,18 @@ footer div img {
   text-align: center;
   padding: 10px; }
 
+.textoT {
+  color: #f4f3ee;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 10px; }
+
+.textoNegro {
+  color: #030203;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 10px; }
+
 .tituloEmergente {
   color: #e74979;
   font-size: 2rem;
@@ -244,7 +260,7 @@ h2 {
   filter: opacity(0.5); }
 
 .botonn {
-  background-image: url(../imagenes/carritoCompra.png);
+  background-image: url(../imagenes/carrito.jpg);
   background-repeat: no-repeat;
   height: 50px;
   width: 50px;
@@ -253,14 +269,21 @@ h2 {
 
 .imgProductos {
   text-align: center;
-  width: 300px;
-  height: 390px;
+  width: 350px;
+  height: 450px;
   display: inline;
   margin: 5px; }
 
 .cuadrada {
   text-align: center;
   width: 390px;
+  height: 390px;
+  display: inline;
+  margin: 5px; }
+
+.rectangular {
+  text-align: center;
+  width: 450px;
   height: 390px;
   display: inline;
   margin: 5px; }
@@ -303,10 +326,12 @@ textarea {
   color: #030203;
   font-size: 1.8rem;
   text-align: center;
-  margin: auto; }
+  padding: 10px; }
 
-.colorTabla {
-  background-color: #b3dfd7; }
+.tamanio {
+  margin: auto;
+  width: 50%;
+  height: auto; }
 
 /*------------------------------------ COMÚN TODAS PÁGINAS  ------------------------------------ */
 @font-face {
@@ -320,3 +345,6 @@ textarea {
 body {
   font-family: "Modelo Mayuscula";
   margin: 0; }
+
+.fondo {
+  background-image: url(../imagenes/fondo.jpg); }

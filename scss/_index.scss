@@ -13,6 +13,19 @@
     text-align: center; 
     padding: 10px;
 }
+.textoT{
+    color: $blanco;
+    font-size: 2.2rem;
+    text-align: center; 
+    padding: 10px;
+}
+
+.textoNegro{
+    color: $negro;
+    font-size: 1.8rem;
+    text-align: center; 
+    padding: 10px;
+}
 
 .tituloEmergente{
     color:$rosa-fuerte;
@@ -51,7 +64,6 @@ article div::before, article div::after{
     left: 0;
     top: 0;
 }
-
 /* CUERPO 4 MAS ELEGIDOS */
 .ver{
     font-size: 1.5rem;
@@ -68,7 +80,6 @@ h2 {
     font-size: 3.12rem;
     position: relative;
 }
-
 
 .modeloh4{
     color: $gris;
@@ -89,7 +100,7 @@ h2 {
 }
 
 .botonn{
-    background-image:url(../imagenes/carritoCompra.png);
+    background-image:url(../imagenes/carrito.jpg);
     background-repeat:no-repeat;
     height:50px;
     width:50px;
