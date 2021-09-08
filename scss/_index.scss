@@ -1,3 +1,5 @@
+/* ------------------------------------- INDEX ----------------------------------------- */
+
 /* CUERPO 3 VIDEO Y CUADRO CON FRASE */
 .cuadroFrase{
     text-align: center;
@@ -97,13 +99,4 @@ h2 {
 
 .zoomImg:hover{
     filter: opacity(.5);
-}
-
-.botonn{
-    background-image:url(../imagenes/carrito.jpg);
-    background-repeat:no-repeat;
-    height:50px;
-    width:50px;
-    background-size: 50px 50px;
-    background-position:center;
 }

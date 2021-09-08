@@ -1,6 +1,22 @@
+/* ------------------------------------- GENERAL (COMÚN EN ALGUNAS PÁGINAS)----------------------------------------- */
+
+/* ------------------------------------- LETRAS ----------------------------------------- */
 p{
-    color: black;
+    color:#030203;
     font-size: 1.25rem;
+}
+
+.modeloh1{
+    color:#e74979;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.letra{
+    color:#e74979;
+    font-weight: bolder;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 @each $size in 80px, 50px, 40px,{
@@ -38,21 +54,6 @@ p{
     }
 }
 
-.linea::after, .linea::before{
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 5px;
-    background-color:#e74979;
-    top:1em;
-}
-.linea::before{
-    left: 110px;
-}
-.linea::after{
-    right: 110px;
-}
-
 .lineaTurquesa{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -70,7 +71,7 @@ p{
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
 .pregFre{
     color: black;
-    font-size: 1.88rem;
+    font-size: 1.5rem;
     font-weight:bolder;
 }
 
@@ -83,4 +84,27 @@ p{
 
 .btnRosa{
     background-color:#e74979;
+}
+
+div form button{
+    background-color:#008b8b; 
+}
+
+.botonn{
+    background-image:url(../imagenes/carrito.jpg);
+    background-repeat:no-repeat;
+    height:50px;
+    width:50px;
+    background-size: 50px 50px;
+    background-position:center;
+}// boton de carrito de compras en los productos
+
+/* ------------------------------------- PRODUCTOS ----------------------------------------- */
+
+.imgProductos{
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    display:inline;
+    margin:5px ;
 }

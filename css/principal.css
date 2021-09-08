@@ -1,7 +1,23 @@
 @charset "UTF-8";
+/* ------------------------------------- SCSS PRINCIPAL ----------------------------------------- */
+/* ------------------------------------- GENERAL (COMÚN EN ALGUNAS PÁGINAS)----------------------------------------- */
+/* ------------------------------------- LETRAS ----------------------------------------- */
 p {
-  color: black;
+  color: #030203;
   font-size: 1.25rem;
+}
+
+.modeloh1 {
+  color: #e74979;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.letra {
+  color: #e74979;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .subtitulo-80px {
@@ -79,23 +95,6 @@ p {
           transform: scale(1);
 }
 
-.linea::after, .linea::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 5px;
-  background-color: #e74979;
-  top: 1em;
-}
-
-.linea::before {
-  left: 110px;
-}
-
-.linea::after {
-  right: 110px;
-}
-
 .lineaTurquesa {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -113,7 +112,7 @@ p {
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
 .pregFre {
   color: black;
-  font-size: 1.88rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
@@ -126,12 +125,36 @@ p {
   background-color: #e74979;
 }
 
+div form button {
+  background-color: #008b8b;
+}
+
+.botonn {
+  background-image: url(../imagenes/carrito.jpg);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  background-size: 50px 50px;
+  background-position: center;
+}
+
+/* ------------------------------------- PRODUCTOS ----------------------------------------- */
+.imgProductos {
+  text-align: center;
+  width: 350px;
+  height: 450px;
+  display: inline;
+  margin: 5px;
+}
+
+/* ------------------------------------- COLORES ----------------------------------------- */
 /* LOGO */
 .logo {
   display: block;
   margin: auto;
 }
 
+/* ------------------------------------- HEADER ----------------------------------------- */
 /* IMG FONDO GENERAL */
 header {
   background-image: url(../imagenes/fondo.jpg);
@@ -158,6 +181,7 @@ h2 {
   font-size: 1.88rem;
 }
 
+/* ------------------------------------- MENU/NAV ----------------------------------------- */
 nav * {
   background: -webkit-gradient(linear, left bottom, left top, from(#e74979), to(#eea7bb));
   background: linear-gradient(to top, #e74979, #eea7bb);
@@ -203,6 +227,7 @@ nav a img {
   display: inline-block;
 }
 
+/* ------------------------------------- FOOTER ----------------------------------------- */
 footer {
   position: absolute;
   margin: 0;
@@ -210,7 +235,7 @@ footer {
   height: auto;
 }
 
-.textoFooter {
+.tituloFooter {
   color: #f4f3ee;
   font-size: 1.88rem;
   text-align: center;
@@ -221,7 +246,7 @@ footer {
   background: linear-gradient(to bottom, #f38dac, #eea7bb);
 }
 
-.texto {
+.textoFooter {
   color: #030203;
   font-size: 1.25rem;
   line-height: 30px;
@@ -243,6 +268,13 @@ footer div img {
   height: 50px;
 }
 
+.imagenFooter {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+/* ------------------------------------- INDEX ----------------------------------------- */
 /* CUERPO 3 VIDEO Y CUADRO CON FRASE */
 .cuadroFrase {
   text-align: center;
@@ -352,23 +384,7 @@ h2 {
           filter: opacity(0.5);
 }
 
-.botonn {
-  background-image: url(../imagenes/carrito.jpg);
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
-  background-size: 50px 50px;
-  background-position: center;
-}
-
-.imgProductos {
-  text-align: center;
-  width: 350px;
-  height: 450px;
-  display: inline;
-  margin: 5px;
-}
-
+/* ------------------------------------- PRODUCTOS ----------------------------------------- */
 .cuadrada {
   text-align: center;
   width: 390px;
@@ -385,9 +401,9 @@ h2 {
   margin: 5px;
 }
 
+/* ------------------------------------- CONTACTANOS ----------------------------------------- */
 .fondoTransparente {
-  background-color: rgba(69, 199, 227, 0.5);
-  opacity: .4;
+  background-color: rgba(69, 198, 227, 0.3);
   padding: 10px;
   border-radius: 10px;
 }
@@ -398,31 +414,17 @@ form {
   height: auto;
 }
 
-.subtitulo-40px {
+.subtitulo40px {
   font-size: 2.5rem;
   color: #008b8b;
   text-align: center;
   margin-top: 20px;
 }
 
-.letra {
-  color: #e74979;
-  font-weight: bolder;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
 .textoForm {
   color: #030203;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: initial;
-}
-
-textarea {
-  min-height: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  min-width: 100%;
 }
 
 .texFinal {
@@ -432,6 +434,7 @@ textarea {
   padding: 10px;
 }
 
+/* ------------------------------------- CARRITO DE COMPRAS ----------------------------------------- */
 .tamanio {
   margin: auto;
   width: 50%;
