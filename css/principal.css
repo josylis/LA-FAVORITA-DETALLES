@@ -122,7 +122,7 @@ p {
 }
 
 .btnRosa {
-  background-color: #e74979;
+  background-color: #ea7bbe;
 }
 
 div form button {
@@ -182,15 +182,20 @@ h2 {
 }
 
 /* ------------------------------------- MENU/NAV ----------------------------------------- */
-nav * {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e74979), to(#eea7bb));
-  background: linear-gradient(to top, #e74979, #eea7bb);
+nav {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e74979), to(#ea7bbe));
+  background: linear-gradient(to top, #e74979, #ea7bbe);
   font-size: 1.25rem;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
-.btnRosa {
-  background-color: #eea7bb;
+.colorNav {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e74979), to(#ea7bbe));
+  background: linear-gradient(to top, #e74979, #ea7bbe);
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 nav a img {
@@ -198,7 +203,7 @@ nav a img {
 }
 
 #menu #item a:hover {
-  background: #eea7bb;
+  background: #ea7bbe;
   color: #030203;
   -webkit-animation: 1s ms 1;
           animation: 1s ms 1;
@@ -242,8 +247,8 @@ footer {
 }
 
 .fondoFooter {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f38dac), to(#eea7bb));
-  background: linear-gradient(to bottom, #f38dac, #eea7bb);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f38dac), to(#ea7bbe));
+  background: linear-gradient(to bottom, #f38dac, #ea7bbe);
 }
 
 .textoFooter {
@@ -278,7 +283,7 @@ footer div img {
 /* CUERPO 3 VIDEO Y CUADRO CON FRASE */
 .cuadroFrase {
   text-align: center;
-  background: #eea7bb;
+  background: #ea7bbe;
   margin: 60px auto;
   padding: 10px;
   position: relative;

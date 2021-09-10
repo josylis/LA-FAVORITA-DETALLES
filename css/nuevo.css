@@ -80,7 +80,7 @@ p {
   background-color: #008b8b; }
 
 .btnRosa {
-  background-color: #e74979; }
+  background-color: #ea7bbe; }
 
 div form button {
   background-color: #008b8b; }
@@ -131,19 +131,23 @@ h2 {
   font-size: 1.88rem; }
 
 /* ------------------------------------- MENU/NAV ----------------------------------------- */
-nav * {
-  background: linear-gradient(to top, #e74979, #eea7bb);
+nav {
+  background: linear-gradient(to top, #e74979, #ea7bbe);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; }
+
+.colorNav {
+  background: linear-gradient(to top, #e74979, #ea7bbe);
   font-size: 1.25rem;
   font-weight: bold; }
-
-.btnRosa {
-  background-color: #eea7bb; }
 
 nav a img {
   width: 35px; }
 
 #menu #item a:hover {
-  background: #eea7bb;
+  background: #ea7bbe;
   color: #030203;
   animation: 1s ms 1;
   animation-name: animacionMenu; }
@@ -171,7 +175,7 @@ footer {
   text-align: center; }
 
 .fondoFooter {
-  background: linear-gradient(to bottom, #f38dac, #eea7bb); }
+  background: linear-gradient(to bottom, #f38dac, #ea7bbe); }
 
 .textoFooter {
   color: #030203;
@@ -201,7 +205,7 @@ footer div img {
 /* CUERPO 3 VIDEO Y CUADRO CON FRASE */
 .cuadroFrase {
   text-align: center;
-  background: #eea7bb;
+  background: #ea7bbe;
   margin: 60px auto;
   padding: 10px;
   position: relative; }

@@ -1,13 +1,17 @@
 /* ------------------------------------- MENU/NAV ----------------------------------------- */
 
-nav *{
-    background: linear-gradient(to top, $rosa-fuerte, $rosa-claro);
+nav{
+    background: linear-gradient(to top, #e74979, #ea7bbe);
     font-size: 1.25rem;
     font-weight: bold;
+    margin:0; 
+    padding:0; 
 }
 
-.btnRosa{
-    background-color: $rosa-claro;
+.colorNav {
+    background: linear-gradient(to top, #e74979, #ea7bbe);
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 nav a img{
@@ -15,7 +19,7 @@ nav a img{
 }
 
 #menu #item a:hover{
-    background:$rosa-claro;
+    background: #ea7bbe;
     color:$negro;
     animation: 1s ms 1;
     animation-name: animacionMenu;
