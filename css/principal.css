@@ -121,6 +121,10 @@ p {
   background-color: #008b8b;
 }
 
+.btnTurquesaClaro {
+  background-color: #b3dfd7;
+}
+
 .btnRosa {
   background-color: #ea7bbe;
 }
@@ -444,6 +448,21 @@ form {
   margin: auto;
   width: 50%;
   height: auto;
+}
+
+/* ------------------------------------- BOTONOES ----------------------------------------- */
+.accordion-button:not(.collapsed) {
+  color: #030203;
+  background-color: #b3dfd7;
+  -webkit-box-shadow: inset 0 -1px 0 rgb 0 0 0/13%;
+          box-shadow: inset 0 -1px 0 rgb 0 0 0/13%;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem #3dccc7;
+          box-shadow: 0 0 0 0.25rem #3dccc7;
 }
 
 /*------------------------------------ COMÚN TODAS PÁGINAS  ------------------------------------ */

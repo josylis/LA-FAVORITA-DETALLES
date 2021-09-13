@@ -9,6 +9,7 @@
 @import "productos";
 @import"contactanos";
 @import"carrito";
+@import"preguntas";
 
 /*------------------------------------ COMÚN TODAS PÁGINAS  ------------------------------------ */
 @font-face{
@@ -24,7 +25,7 @@ body{
     font-family:"Modelo Mayuscula";
     margin: 0;
 }
- .fondo{
+.fondo{
     background-image:url(../imagenes/fondo.jpg);
- }
+}
 
