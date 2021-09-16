@@ -71,12 +71,6 @@ p {
   color: #030203;
 }
 
-/*------------------------------------ ANIMACIÓN I  ------------------------------------ */
-.animacionTitulosImg:hover {
-  -webkit-filter: opacity(0.5);
-          filter: opacity(0.5);
-}
-
 /*------------------------------------ ANIMACIÓN TÍTULOS  ------------------------------------ */
 .animacionTitulos {
   font-size: 2.5rem;
@@ -182,7 +176,34 @@ h1 {
 
 h2 {
   color: #008b8b;
-  font-size: 1.88rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Por debajo de 700px */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Por debajo de 400px */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 18px;
+  }
 }
 
 /* ------------------------------------- MENU/NAV ----------------------------------------- */
@@ -234,6 +255,14 @@ nav a img {
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* ------------------------------------- FOOTER ----------------------------------------- */
@@ -410,6 +439,54 @@ h2 {
   margin: 5px;
 }
 
+/* ------------------------------------- PROXIMAMENTE ----------------------------------------- */
+.proximamente {
+  font-size: 4rem;
+  color: #e74979;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
 /* ------------------------------------- CONTACTANOS ----------------------------------------- */
 .fondoTransparente {
   background-color: rgba(69, 198, 227, 0.3);
@@ -448,6 +525,19 @@ form {
   margin: auto;
   width: 50%;
   height: auto;
+}
+
+.imgCarrito {
+  text-align: center;
+  width: 150px;
+  height: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #3dccc7;
+  vertical-align: none;
 }
 
 /* ------------------------------------- BOTONOES ----------------------------------------- */
