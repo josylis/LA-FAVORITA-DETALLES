@@ -1,4 +1,6 @@
-# LA FAVORITA DETALLES
+![](https://josylis.github.io/LA-FAVORITA-DETALLES/imagenes/logo.jpg)
+
+✨ # LA FAVORITA DETALLES
 
 @lafavoritadetalles emprendimiento personal 
 
@@ -9,3 +11,5 @@ Para poder  ver el sitio ingresa al [siguiente link](https://josylis.github.io/L
 ## Coderhouse
 
 Proyecto realizado para el curso de "Desarrollo Web" de Coderhouse.
+
+💻 Joselyn De Ascencao
