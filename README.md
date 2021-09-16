@@ -1,6 +1,6 @@
 ![](https://josylis.github.io/LA-FAVORITA-DETALLES/imagenes/logo.jpg)
 
-✨ # LA FAVORITA DETALLES
+ # ✨ LA FAVORITA DETALLES
 
 @lafavoritadetalles emprendimiento personal 
 
