@@ -103,6 +103,12 @@ p {
   border-bottom: 5px solid #e74979;
 }
 
+/*------------------------------------ ANIMACIÓN IMAGENES  ------------------------------------ */
+.imgProductos:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
 /* ------------------------------------- HTML PREG FRECUENTES ----------------------------------------- */
 .pregFre {
   color: black;
@@ -573,5 +579,9 @@ body {
 
 .fondo {
   background-image: url(../imagenes/fondo.jpg);
+}
+
+html, body {
+  max-width: 100%;
 }
 /*# sourceMappingURL=principal.css.map */
