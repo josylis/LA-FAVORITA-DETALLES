@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="../libreria/aos.css"/>
         <link rel="stylesheet" href="../libreria/animate.css">
         <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/nuevo.css">
+        <!-- <link rel="stylesheet" href="../css/nuevo.css"> -->
+        <link rel="stylesheet" href="../css/principal.css">
     </head>
 
 
@@ -39,55 +40,47 @@
 
 <!------------------------------------------- NAVEGADOR/MENU ------------------------------------------->
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                <div id="menu" class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div id="menu" class="container-fluid">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
-                            <li id="item" class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
+                <li id="item" class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                </li>
 
-                            <li id="item" class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="../contenidos/productos.html#productos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
-                                <ul class="dropdown-menu colorNav" aria-labelledby="navbarDropdown">
+                <li id="item" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../contenidos/productos.html#productos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                    <ul class="dropdown-menu colorNav" aria-labelledby="navbarDropdown">
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#productos">VER TODOS</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#cajas">CAJAS</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#cestas">CESTAS</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#letras">LETRAS</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#padre">DÍA DEL PADRE</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#madre">DÍA DE LA MADRE</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#maestro">DÍA DEL MAESTRO</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#navidad">NAVIDAD</a></li>
+                        <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#otros">OTROS</a></li>
+                    </ul>
+                </li>
 
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#productos">VER TODOS</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#cajas">CAJAS</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#cestas">CESTAS</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#letras">LETRAS</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#padre">DÍA DEL PADRE</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#madre">DÍA DE LA MADRE</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#maestro">DÍA DEL MAESTRO</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#navidad">NAVIDAD</a></li>
-                                    <li id="item"><a class="dropdown-item" href="../contenidos/productos.html#otros">OTROS</a></li>
-                                </ul>
-                            </li>
+                <li id="item" class="nav-item">
+                    <a class="nav-link" href="../contenidos/preguntasFrec.html">PREGUNTAS FRECUENTES</a>
+                </li>
 
-                            <li id="item" class="nav-item">
-                                <a class="nav-link" href="../contenidos/preguntasFrec.html">PREGUNTAS FRECUENTES</a>
-                            </li>
+                <li id="item" class="nav-item">
+                    <a class="nav-link scrollto" href="#contactanosID">CONTÁCTANOS</a>
+                </li>
 
-                            <li id="item" class="nav-item">
-                                <a class="nav-link" href="../contenidos/contactanos.html">CONTÁCTANOS</a>
-                            </li>
+            </ul>
 
-                            <li id="item" class="nav-item">
-                                <a class="nav-link" href="../contenidos/carrito.html"><img src="../imagenes/carrito.jpg"></a>
-                            </li>
-                        </ul>
-
-                        <form class="d-flex">
-                            <input class="form-control me-2 border border-dark" type="buscar" id="menu" placeholder="Escribe aqui..." aria-label="Search">
-                        <button class="btn btnRosa border border-dark" type="submit">Buscar</button>
-                    </form>
-                    </div>
-                </div>
-            </nav>
+        </div>
+    </div>
+</nav>
 
 <!------------------------------------------- PRODCUTOS ------------------------------------------->
 
@@ -135,7 +128,10 @@
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                        <button   button class="botonn btn btnTurquesa"></button>
+                                        <form action="https://wa.link/dy7hl9">
+                                            <button class="botonn btn btnTurquesa"></button>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                                 </div>
@@ -178,7 +174,9 @@
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                        <button   button class="botonn btn btnTurquesa"></button>
+                                        <form action="https://wa.link/dy7hl9">
+                                            <button class="botonn btn btnTurquesa"></button>
+                                        </form>
                                     </div>
                                 </div>
                                 </div>
@@ -220,7 +218,9 @@
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                            <button class="botonn btn btnTurquesa"></button>
+                                            <form action="https://wa.link/dy7hl9">
+                                                <button class="botonn btn btnTurquesa"></button>
+                                            </form>
                                         </div>
                                     </div>
                                     </div>
@@ -276,7 +276,9 @@
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                        <button   button class="botonn btn btnTurquesa"></button>
+                                        <form action="https://wa.link/dy7hl9">
+                                            <button class="botonn btn btnTurquesa"></button>
+                                        </form>
                                     </div>
                                 </div>
                                 </div>
@@ -323,7 +325,9 @@
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                        <button   button class="botonn btn btnTurquesa"></button>
+                                        <form action="https://wa.link/dy7hl9">
+                                            <button class="botonn btn btnTurquesa"></button>
+                                        </form>
                                     </div>
                                 </div>
                                 </div>
@@ -368,7 +372,9 @@
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                        <button class="botonn btn btnTurquesa"></button>
+                                        <form action="https://wa.link/dy7hl9">
+                                            <button class="botonn btn btnTurquesa"></button>
+                                        </form>
                                     </div>
                                 </div>
                                 </div>
@@ -426,7 +432,9 @@
         
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -464,7 +472,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -508,7 +518,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -566,7 +578,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -607,7 +621,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -645,7 +661,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -703,7 +721,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -749,7 +769,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -789,7 +811,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -856,7 +880,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -898,7 +924,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -930,7 +958,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -990,7 +1020,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -1036,7 +1068,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -1084,7 +1118,9 @@
 
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btnTurquesa ver" data-bs-dismiss="modal">Ok!</button>
-                                                <button   button class="botonn btn btnTurquesa"></button>
+                                                <form action="https://wa.link/dy7hl9">
+                                                    <button class="botonn btn btnTurquesa"></button>
+                                                </form>
                                             </div>
                                         </div>
                                         </div>
@@ -1098,58 +1134,55 @@
             <hr class="lineaTurquesa">
 
 
-        <!------------------------------------------- FOOTER ------------------------------------------->
+ <!------------------------------------------- FOOTER ------------------------------------------->
 
-        <footer class="container-fluid fondoFooter">
-            <div class="container border-bottom p-3"> 
+ <footer class="container-fluid fondoFooter">
 
-                <div class="row p-3 d-flex container-fluid">
-                    <!-- ENVIOS -->
-                    <div class="col-12 col-lg-4 flexFinal">
-                        <img loading=lazy src="../imagenes/envio.jpg" alt="imagen de un camion">
-                        <h2 class="tituloFooter col-12">ENVÍOS</h2>
-                        <p class="col-12 textoFooter ">Realizamos envíos en CABA y GRAN BUENOS AIRES consultanos por WhatsApp</p>
-                    </div>
+    <div class="container border-bottom"> 
 
-                <!-- FORMAS DE PAGO -->
-                    <div class="col-12 col-lg-4 flexFinal" >
-                        <img loading=lazy src="../imagenes/pago.jpg" alt="imagen de pago">
-                        <h2 class="col-12 tituloFooter">FORMAS DE PAGO</h2>
-                        <p class="textoFooter">-Efectivo</p>
-                        <p class="textoFooter">-Transferencia</p>
-                        <p class="textoFooter">-MercadoPago</p>
-                        <p class="textoFooter" >-Si estás en Venezuela comunicate por WhastApp con nosotros</p>
-                    </div>
+        <div class="row p-3 d-flex container-fluid">
 
-                    <!-- SECCION CONTACTANOS -->
-                    <div class="col-12 col-lg-4 flexFinal">
-                        <img loading=lazy src="../imagenes/contacto.jpg" alt="imagen de contactanos">
-                        <h2 class="tituloFooter col-12">CONTÁCTANOS</h2>
-
-                        <!-- INSTAGRAM -->
-                        <div class="text-center d-flex flex-row ">
-                            <img class="imagenLinks m-0" src="../imagenes/instagram.jpg" alt="logo instagram">
-                            <a href="https://www.instagram.com/lafavoritadetalles/" class="text-decoration-none text-muted texto">@lafavoritadetalles</a>
-                        </div>
-
-                        <!-- WHATSAPP -->
-                        <div class="text-center d-flex flex-row">
-                            <img class="imagenLinks m-0" src="../imagenes/whatsApp.jpg" alt="logo WhastApp">
-                            <a href="https://wa.link/dy7hl9." class="text-decoration-none text-muted texto ">WhatsApp</a>
-                        </div>
-
-                        <!-- EMAIL -->
-                        <div class="text-center d-flex flex-row">
-                            <img class="imagenLinks m-0" src="../imagenes/gmail.jpg" alt="logo Gmail">
-                            <a href="mailto:lafavoritafruits@gmail.com" class="text-decoration-none text-muted texto">lafavoritafruits@gmail.com</a>
-                        </div>
-
-                    </div>
-                </div>
+            <!-- ENVIOS -->
+            <div class="col-12 col-lg-4 flexFinal">
+                <img loading=lazy src="../imagenes/envio.jpg" alt="imagen de un camion">
+                <h2 class="tituloFooter col-12">ENVÍOS</h2>
+                <p class="col-12 textoFooter">Realizamos envíos en CABA y GRAN BUENOS AIRES consultanos por WhatsApp</p>
             </div>
 
-            <p class="col-12 textoFooter py-2"> Joselyn De Ascencao │ joselyndeascencao@gmail.com </p>
-        </footer> 
+            <!-- FORMAS DE PAGO -->
+            <div class="col-12 col-lg-4 flexFinal">
+                <img loading=lazy src="../imagenes/pago.jpg" alt="imagen de pago">
+                <h2 class="col-12 tituloFooter footer--pagos ">FORMAS DE PAGO</h2>
+                <p class="textoFooter">-Efectivo</p>
+                <p class="textoFooter">-Transferencia</p>
+                <p class="textoFooter">-MercadoPago</p>
+                <p class="textoFooter" >-Si estás en Venezuela comunicate por WhastApp con nosotros</p>
+            </div>
+
+            <!-- SECCION CONTACTANOS -->
+            <div class="col-12 col-lg-4 flexFinal">
+                <img loading=lazy src="../imagenes/contacto.jpg" alt="imagen de contactanos">
+                <h2 id="contactanosID" class="tituloFooter col-12">CONTÁCTANOS</h2>
+
+                <!-- INSTAGRAM -->
+                <div class="text-center d-flex flex-row ">
+                    <img class="imagenLinks m-0" src="../imagenes/bxl-instagram.svg" alt="logo instagram">
+                    <a href="https://www.instagram.com/lafavoritadetalles/" class="text-muted textoFooter">@lafavoritadetalles</a>
+                </div>
+
+                <!-- WHATSAPP -->
+                <div class="text-center d-flex flex-row">
+                    <img class="imagenLinks m-0" src="../imagenes/bxl-whatsapp.svg" alt="logo WhastApp">
+                    <a href="https://wa.link/dy7hl9" class="text-muted textoFooter">WhatsApp</a>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+
+    <p class="col-12 textoFooter py-2"> - Web desarrollada por <a href="https://www.linkedin.com/in/joselyn-de-ascencao" class="text-muted textoFooter"> JosyLis</a> </p>
+
+</footer>
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

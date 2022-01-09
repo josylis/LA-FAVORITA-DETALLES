@@ -41,6 +41,10 @@ p {
   margin-top: 50px;
 }
 
+.texto-justificado{
+  text-align: justify;
+} 
+
 /* ------------------------------------- PLACEHOLDER ----------------------------------------- */
 #menu::-webkit-input-placeholder {
   color: #030203;
@@ -134,7 +138,7 @@ div form button {
 }
 
 .botonn {
-  background-image: url(../imagenes/carrito.jpg);
+  background-image: url(../imagenes/bxl-whatsappPeq.svg);
   background-repeat: no-repeat;
   height: 50px;
   width: 50px;
