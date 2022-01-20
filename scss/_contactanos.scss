@@ -1,0 +1,34 @@
+/* ------------------------------------- CONTACTANOS ----------------------------------------- */
+
+.fondoTransparente{
+    background-color: hsla(191, 74%, 58%, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.subtitulo40px {
+    font-size: 2.5rem;
+    color: $turquesa-fuerte;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.textoForm{
+    color: $negro;
+    font-size: 1.5rem;
+    text-align: initial;
+}
+
+.texFinal{
+    color: $negro;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px;
+}
+
